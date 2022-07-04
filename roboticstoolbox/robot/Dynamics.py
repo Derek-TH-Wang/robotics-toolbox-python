@@ -391,7 +391,8 @@ class DynamicsMixin:
         if torqfun is None:
             tau = np.zeros((n,))
         else:
-            tau = torqfun(self, t, q, qd, **targs)
+            # tau = torqfun(self, t, q, qd, **targs)
+            tau = torqfun(self, t, q, qd)
             if len(tau) != n or not all(np.isreal(tau)):
                 raise RuntimeError(
                     "torque function must return vector with N real elements"
