@@ -59,6 +59,13 @@ The Toolbox provides:
 The Toolbox leverages the [Spatial Maths Toolbox for Python](https://github.com/petercorke/spatialmath-python) to
 provide support for data types such as SO(n) and SE(n) matrices, quaternions, twists and spatial vectors.
 
+### TODO
+* kinematics and dynamics symbolic representation, and code generation
+* joints control while plotting
+* system identification
+* (spatialmath) space circle plot
+* (spatialmath) space plane angle calculation
+
 ## Code Example
 
 We will load a model of the Franka-Emika Panda robot defined classically using
